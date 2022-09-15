@@ -4,7 +4,7 @@ if (x == 'Enter') {
     var lat; var lon; var errorMessage; var icon;
     var cityName = document.getElementById('city').value;
     const apiKey = 'e4d55f36268c8d59c9cc7029d1797821'
-    const latitudeAndLongitudeUrl =`http://api.openweathermap.org/geo/1.0/direct?q=${cityName}&limit=5&appid=${apiKey}`;
+    const latitudeAndLongitudeUrl =`https://api.openweathermap.org/geo/1.0/direct?q=${cityName}&limit=5&appid=${apiKey}`;
     var city = document.getElementById('city');
     city.value = "";
     city.setAttribute("placeholder","City name...")
@@ -27,8 +27,8 @@ if (x == 'Enter') {
         var textSpace = document.getElementById('textSpace');
         tempSpace.innerHTML =`${temp}&deg;C`
         textSpace.innerHTML =`${data.weather[0].description}`
-        console.log(`http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`)
-        var imageLink = `http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`
+        //console.log(`https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`)
+        var imageLink = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`
         icon= document.getElementById('icon');
         icon.setAttribute("src",imageLink)
     })

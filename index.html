@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="weatherApp.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>Weather App</h1>
+        <input type="text" id="city" onkeydown="weatherApp(event)" placeholder="City name..."/>
+        <p id="errorMessage"></p><br><br>
+        <h2 id="text"></h2>
+        <center><img id ="icon"></center>
+        <div id="tempSpace"></div>
+        <div id="textSpace">- -</div>
+    </div>
+    <script src="weatherApp.js"></script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+body{
+    border:0;
+    height:100%;
+    width:100%;
+    background-image: linear-gradient(to bottom right,blue,violet);
+}
+.container{
+    position: absolute;
+    transform:translate(-50%,-50%);
+    top:50%;
+    left:50%;
+}
+h1{
+    text-align:center;
+    color:white;
+    font-style: oblique;
+    font-size:50px;
+}
+input{
+    border-radius:30px;
+    background:white;
+    font-size:30px;
+}
+#tempSpace{
+    text-align:center;
+    font-size:100px;
+    color:white;
+}
+ #textSpace{
+    text-align:center;
+    font-size:30px;
+    color:white;
+ }
+#text{
+    color:white;
+    font-size:40px;
+    text-align:center;
+    border-bottom:2px solid black;
+}
+#errorMessage{
+    color:red;
+    font-size:20px;
+    font-family: serif;
+}
+ img{
+    margin-bottom:30px;
+    height:50%;
+    width:50%;
+ }
